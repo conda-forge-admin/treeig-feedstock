@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.2.0
+  version: "0.2.2"
 
 package:
   name: treeig
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/treeig/treeig-${{ version }}.tar.gz
-  sha256: c2dabd19321330c355ae20cc6856174351dd922c48eabd70c247551f8dff17fc
+  sha256: 097b4d86dd1d67d7c7ea5be66f8e03f83534b6995849d3755e793b3bc7a48718
 
 build:
   noarch: python

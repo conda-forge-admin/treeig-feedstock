@@ -1,5 +1,6 @@
 """Exercise installed CPU attribution, weighted endpoints, and optional CUDA."""
 import importlib.abc
+from importlib.metadata import version
 import sys
 
 
@@ -15,7 +16,7 @@ import numpy as np
 from sklearn.tree import DecisionTreeRegressor
 from treeig import TreeIG, GPUTreeIG, __version__
 
-assert __version__ == "0.2.0"
+assert __version__ == version("treeig")
 X = np.array([[0.0], [0.25], [0.75], [1.0]])
 model = DecisionTreeRegressor(max_depth=1, random_state=0).fit(X, [0, 0, 2, 2])
 threshold = model.tree_.threshold[0]
